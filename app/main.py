@@ -7,6 +7,7 @@ from .rotas import items, usuarios
 
 app = FastAPI(dependencies=[Depends(pegar_query_token)])
 
+
 app.include_router(usuarios.router)
 app.include_router(items.router)
 app.include_router(

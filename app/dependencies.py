@@ -6,5 +6,5 @@ async def pegar_token_header(token_: str = Header()):
 
 async def pegar_query_token(token_: str):
     if token_ != 'jessica':
-        raise HTTPException(status_code=400, detail='Joken jessica não fornecido')
+        raise HTTPException(status_code=400, detail='Token jessica não fornecido')
 
